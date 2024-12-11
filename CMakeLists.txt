@@ -12,8 +12,7 @@ find_package(Python3 REQUIRED COMPONENTS Interpreter Development)
 include_directories(${Python3_INCLUDE_DIRS})
 
 # Add executable
-add_executable(NODAM carray.c
-        operator.c)
+add_executable(NODAM test.c)
 
 # Link Python library
 target_link_libraries(NODAM ${Python3_LIBRARIES})
